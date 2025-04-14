@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishwar Giram | Drone Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Buttons -->
+  <div class="nav-container">
+    <div class="nav-button" data-tooltip="About" onclick="scrollToSection('about')">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="nav-button" data-tooltip="Skills" onclick="scrollToSection('skills')">
+      <i class="fas fa-code"></i>
+    </div>
+    <div class="nav-button" data-tooltip="Education" onclick="scrollToSection('education')">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="nav-button" data-tooltip="Projects" onclick="scrollToSection('projects')">
+      <i class="fas fa-project-diagram"></i>
+    </div>
+    <div class="nav-button" data-tooltip="Contact" onclick="scrollToSection('contact')">
+      <i class="fas fa-envelope"></i>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <header>
+    <img src="ishwa.JPG" alt="Ishwar Giram" class="profile-img"/>
+    <h1>Ishwar Giram</h1>
+    <p class="tagline">Electronics & Telecommunication Engineer | Drone Technology Specialist | Innovator in Autonomous Systems</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/ishwar-giram-028194329" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/IG1982" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:giramishwar582@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+919270375375"><i class="fas fa-phone-alt"></i></a>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- First row: About and Skills (equal width) -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Innovative engineer with a passion for drone technology and robotics. Combining technical expertise with creative problem-solving to develop cutting-edge aerial solutions. Proven leader with entrepreneurial experience and a drive to push technological boundaries.</p>
+      <p style="margin-top: 15px;">Specializing in autonomous systems, drone design, and aerial imaging technologies to create impactful solutions for real-world challenges across industries including agriculture, surveillance, and logistics.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>Drone Design & Development</span>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>Autonomous Systems</span>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>Aerial Photography</span>
+          <span>80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>Embedded Systems</span>
+          <span>75%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">
+          <span>Flight Controller Programming</span>
+          <span>88%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 88%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second row: Education (full width) -->
+    <section id="education" class="full-width">
+      <h2>Education & Certifications</h2>
+      <table>
+        <tr>
+          <th>Qualification</th>
+          <th>Institution</th>
+          <th>Duration</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>B.E. - Electronics & Telecommunication</td>
+          <td>MIT Academy of Engineering, Pune</td>
+          <td>2024-2028</td>
+          <td class="education-details">CGPA: --/10 | Specialization in Embedded Systems and IoT</td>
+        </tr>
+        <tr>
+          <td>Advanced Drone Technology Certification</td>
+          <td>MIT Academy of Engineering</td>
+          <td>2024-2028</td>
+          <td class="education-details">Focus on autonomous flight systems, computer vision, and drone regulations</td>
+        </tr>
+        <tr>
+          <td>Robotics & AI Workshop</td>
+          <td>MITAOE</td>
+          <td>2024-2028</td>
+          <td class="education-details">Hands-on training in robotic systems and artificial intelligence applications</td>
+        </tr>
+        <tr>
+          <td>HSC (12th Grade)</td>
+          <td>Maharashtra State Board</td>
+          <td>2019-2021</td>
+          <td class="education-details">Percentage: 89% | Focus on Physics, Chemistry, and Mathematics</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Third row: Projects (full width) -->
+    <section id="projects" class="full-width">
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>AI-Powered Surveillance Drone</h3>
+          <p>Developed an autonomous surveillance drone with real-time object detection and tracking capabilities using computer vision and machine learning. Implemented facial recognition and anomaly detection algorithms.</p>
+        </div>
+        <div class="project-card">
+          <h3>Precision Agriculture Drone</h3>
+          <p>Built a drone system for crop monitoring and analysis with multispectral imaging and automated data processing for agricultural applications. Reduced water usage by 30% through targeted irrigation recommendations.</p>
+        </div>
+        <div class="project-card">
+          <h3>Drone Delivery System</h3>
+          <p>Prototyped a lightweight delivery drone with GPS navigation and obstacle avoidance for last-mile package delivery in urban environments. Achieved 95% delivery accuracy in field tests.</p>
+        </div>
+        <div class="project-card">
+          <h3>Search & Rescue Drone</h3>
+          <p>Designed a thermal imaging-equipped drone for emergency response scenarios. Capable of autonomous search patterns and real-time location transmission to ground teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fourth row: Competencies and Interests (equal width) -->
+    <section id="competencies">
+      <h2>Core Competencies</h2>
+      <ul>
+        <li>Drone System Architecture Design</li>
+        <li>Flight Controller Programming (PX4, ArduPilot)</li>
+        <li>Aerial Data Collection & Analysis</li>
+        <li>Technical Project Management</li>
+        <li>Innovation & Rapid Prototyping</li>
+        <li>Regulatory Compliance for UAVs</li>
+        <li>Computer Vision for Drones</li>
+      </ul>
+    </section>
+
+    <section id="interests">
+      <h2>Professional Interests</h2>
+      <ul>
+        <li>Autonomous drone systems and swarm intelligence</li>
+        <li>Aerial robotics research and development</li>
+        <li>Drone-based solutions for social impact</li>
+        <li>Advanced flight control algorithms</li>
+        <li>Next-generation drone technologies</li>
+        <li>Human-drone interaction systems</li>
+      </ul>
+    </section>
+
+    <!-- Fifth row: Contact (full width) -->
+    <section id="contact" class="full-width">
+      <h2>Contact</h2>
+      <table>
+        <tr>
+          <td><i class="fas fa-envelope"></i> Email</td>
+          <td><a href="mailto:giramishwar582@gmail.com" style="color: var(--primary); text-decoration: none;">giramishwar582@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-phone-alt"></i> Phone</td>
+          <td><a href="tel:+919270375375" style="color: var(--primary); text-decoration: none;">+91 92703 75375</a></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-map-marker-alt"></i> Location</td>
+          <td>Beed, Maharashtra, India</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-paper-plane"></i> Availability</td>
+          <td>Open to collaborations and research opportunities</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+
+  <footer>
+    <p>Let's connect and explore opportunities in drone technology innovation</p>
+    <p>&copy; 2025 Ishwar Giram. All rights reserved.</p>
+    <p>Designed with <span class="highlight">passion</span> for technology and innovation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
